@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "f873ef66-e54d-46e8-8770-ddd97c34ae35",
+		"name": "SpringBootProducts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1238031"
+	},
+	"item": [
+		{
+			"name": "New Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Camisa\",\n    \"value\": 100.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.45:8080/products",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"45"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.45:8080/products",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"45"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/7344ac14-d483-49cf-abee-8689fd1b7d05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"7344ac14-d483-49cf-abee-8689fd1b7d05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Camisa\",\n    \"value\": 200.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.45:8080/products/2795954c-da7e-4be5-b60b-78678f0f45ba",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"45"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"2795954c-da7e-4be5-b60b-78678f0f45ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.45:8080/products/2795954c-da7e-4be5-b60b-78678f0f45ba",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"45"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"2795954c-da7e-4be5-b60b-78678f0f45ba"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
