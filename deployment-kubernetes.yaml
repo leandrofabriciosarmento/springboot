@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-leandro-springboot
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: pod-leandro-springboot
+      labels:
+        app: leandro-springboot
+    spec:
+      containers:
+        - name: container-leandro-springboot
+          image: leandrofabriciosarmento/springboot:1.0
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: configmap-leandro-springboot
+  selector:
+    matchLabels:
+      app: leandro-springboot
