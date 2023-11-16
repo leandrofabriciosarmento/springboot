@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Camisa\",\n    \"value\": 100.0\n}",
+					"raw": "{\n    \"name\":\"Camisa\",\n    \"unitValue\": 100.0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -43,13 +43,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.1.45:8080/products",
+					"raw": "http://localhost:8080/products",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"45"
+						"localhost"
 					],
 					"port": "8080",
 					"path": [
@@ -86,7 +83,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Camisa\",\n    \"value\": 200.0\n}",
+					"raw": "{\n    \"name\": \"Camisa\",\n    \"unitValue\": 200.0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,7 +114,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.1.45:8080/products/2795954c-da7e-4be5-b60b-78678f0f45ba",
+					"raw": "http://192.168.1.45:8080/products/689d882c-639d-4cf9-a8a9-e3bedec9874d",
 					"protocol": "http",
 					"host": [
 						"192",
@@ -128,7 +125,7 @@
 					"port": "8080",
 					"path": [
 						"products",
-						"2795954c-da7e-4be5-b60b-78678f0f45ba"
+						"689d882c-639d-4cf9-a8a9-e3bedec9874d"
 					]
 				}
 			},

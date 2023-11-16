@@ -21,7 +21,7 @@ public class ProductModel
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idProduct;
     private String name;
-    private BigDecimal value;
+    private BigDecimal unitValue;
 
     public UUID getIdProduct() {
         return idProduct;
@@ -39,12 +39,12 @@ public class ProductModel
         this.name = name;
     }
 
-    public BigDecimal getValue() {
-        return value;
+    public BigDecimal getUnitValue() {
+        return unitValue;
     }
 
-    public void setValue(BigDecimal value) {
-        this.value = value;
+    public void setUnitValue(BigDecimal value) {
+        this.unitValue = value;
     }
 
     @Override

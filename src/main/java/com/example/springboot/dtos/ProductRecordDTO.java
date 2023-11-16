@@ -7,5 +7,5 @@ import java.math.BigDecimal;
 
 public record ProductRecordDTO(
         @NotBlank String name,
-        @NotNull BigDecimal value) {
+        @NotNull BigDecimal unitValue) {
 }

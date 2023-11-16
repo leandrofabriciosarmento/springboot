@@ -12,4 +12,11 @@ spec:
         - containerPort: 8080
       envFrom:
         - configMapRef:
-            name: configmap-leandro-springboot
+            name: configmap-leandro
+    - name: container-leandro-postgres
+      image: postgres:14.5
+      ports:
+        - containerPort: 5432
+      envFrom:
+        - configMapRef:
+            name: configmap-leandro
