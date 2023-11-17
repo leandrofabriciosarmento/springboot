@@ -12,12 +12,9 @@ spec:
     spec:
       containers:
         - name: container-leandro-springboot
-          image: leandrofabriciosarmento/springboot:1.0
+          image: leandrofabriciosarmento/springboot:1.2
           ports:
             - containerPort: 8080
-          envFrom:
-            - configMapRef:
-                name: configmap-leandro-springboot
   selector:
     matchLabels:
       app: leandro-springboot

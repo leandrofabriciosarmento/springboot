@@ -1,10 +1,9 @@
-#Usar nos servidores de Cloud
 apiVersion: v1
 kind: Service
 metadata:
   name: svc-leandro-springboot
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 8080
       targetPort: 8080
